@@ -1,0 +1,14 @@
+D:\Blood_Transformation\Blood_Transformation\bin\Debug\Blood_Transformation.exe.config
+D:\Blood_Transformation\Blood_Transformation\bin\Debug\Blood_Transformation.exe
+D:\Blood_Transformation\Blood_Transformation\bin\Debug\Blood_Transformation.pdb
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.csproj.AssemblyReference.cache
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.Form1.resources
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.Form2.resources
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.Properties.Resources.resources
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.csproj.GenerateResource.cache
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.csproj.CoreCompileInputs.cache
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.exe
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.pdb
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.Form3.resources
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.Form4.resources
+D:\Blood_Transformation\Blood_Transformation\obj\Debug\Blood_Transformation.Form5.resources
