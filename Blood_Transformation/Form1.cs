@@ -16,9 +16,7 @@ namespace Blood_Transformation
         {
             InitializeComponent();
         }
-        //*************************************
-        public delegate void ShowLoginFormDelegate();
-        public event ShowLoginFormDelegate ShowLoginFormEvent;
+        
         private void button1_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
@@ -70,6 +68,11 @@ namespace Blood_Transformation
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
