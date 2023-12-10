@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Blood_Transformation
 {
@@ -79,8 +80,16 @@ namespace Blood_Transformation
 
         private void submit_Click(object sender, EventArgs e)
         {
+            //
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-J5HRLL8;Initial Catalog=Blood_Transformatiom;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into  BloodOrders (blood_type, liters_needed) " +
+                "values ('" +txt_blood_type.Text + "', '" +txt_liters_blood.Text + "')", con);
+            cmd.ExecuteNonQuery();
+
             this.Close();
             MessageBox.Show("the request executed successfully");
         }
     }
 }
+

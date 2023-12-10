@@ -69,6 +69,7 @@
             this.txt_email.Size = new System.Drawing.Size(396, 32);
             this.txt_email.TabIndex = 2;
             this.txt_email.Text = "EMAIL ADDRESS";
+            this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
             this.txt_email.Enter += new System.EventHandler(this.txt_email_Enter);
             this.txt_email.Leave += new System.EventHandler(this.txt_email_Leave);
             // 

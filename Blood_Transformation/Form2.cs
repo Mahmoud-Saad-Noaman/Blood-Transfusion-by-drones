@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Blood_Transformation
 {
@@ -19,6 +20,11 @@ namespace Blood_Transformation
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // connection database "table accounts"
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-J5HRLL8;Initial Catalog=Blood_Transformatiom;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into accounts(email,password) values('" + txt_email.Text + "' , '" + txt_password.Text + "')", con);
+            cmd.ExecuteNonQuery();
             Form4 f4 = new Form4();
             f4.Show();
             this.Hide();
@@ -84,6 +90,11 @@ namespace Blood_Transformation
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_email_TextChanged(object sender, EventArgs e)
         {
 
         }

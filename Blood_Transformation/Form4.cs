@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Blood_Transformation
 {
@@ -215,6 +216,14 @@ namespace Blood_Transformation
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // connected datadase "table hospitals"
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-J5HRLL8;Initial Catalog=Blood_Transformatiom;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into hospitals(hospital_name,pickup_latitude,pickup_longitude,city,hospital_address,hospital_street)" +
+                "values('"+txt_hospital_name.Text+"' , '"+txt_latitude.Text+"','"+txt_longitude.Text+"','"+txt_city.Text+"'," +
+                " '"+txt_hospital_address.Text+"' ,'"+txt_street.Text+"' )", con);
+            cmd.ExecuteNonQuery();
+
             Form3 f3 = new Form3();
             f3.Show();
             this.Hide();
